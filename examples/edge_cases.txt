@@ -1,0 +1,38 @@
+# Commands before a valid PLACE are discarded
+MOVE
+LEFT
+RIGHT
+REPORT
+
+# First valid placement
+PLACE 0,0,NORTH
+
+# Walk to the north edge and try to fall off
+MOVE
+MOVE
+MOVE
+MOVE
+MOVE
+REPORT
+
+# Spin around
+LEFT
+LEFT
+LEFT
+LEFT
+REPORT
+
+# Can handle comments
+# LEFT
+#LEFT
+
+REPORT
+
+# Re-place in the middle and do a diagonal-ish walk
+PLACE 2,2,EAST
+MOVE
+MOVE
+LEFT
+MOVE
+MOVE
+REPORT
