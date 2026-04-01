@@ -1,7 +1,7 @@
 from __future__ import annotations
 import argparse
 import sys
-
+import io
 from src.table import Table
 from src.simulator import Simulator
 
@@ -40,7 +40,6 @@ def run(argv: list[str] | None = None) -> None:
     parser = build_parser()
     args = parser.parse_args(argv)
 
-    import io
     output = io.TextIOWrapper(sys.stdout.buffer, line_buffering=True)
     table = Table(width = args.width, height = args.height)
     simulator = Simulator(table=table, output=output)

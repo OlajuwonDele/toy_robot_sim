@@ -36,6 +36,7 @@ class TestParsePlace:
         ("PLACE 0,0,SOUTH", PlaceCommand(Position(0, 0), Direction.SOUTH)),
         ("PLACE 4,4,WEST",  PlaceCommand(Position(4, 4), Direction.WEST)),
         ])
+
     def test_place_validity(self, test_input, expected):
         assert parse_command(test_input) == expected
 
