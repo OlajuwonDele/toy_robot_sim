@@ -15,7 +15,6 @@ class PlaceCommand:
 
 @dataclass(frozen=True)
 class MoveCommand:
-    ""
     pass
 
 
